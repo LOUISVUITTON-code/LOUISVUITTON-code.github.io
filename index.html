@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ANIMATIONS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--
+    
+                BOOTSTRAP 
+            
+            <link href="https://maxcdn.bootstrapcdn.com/font-..." rel="stylesheet"
+                integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+            
+            -->
+
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- TYPE FONTS -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- ICONS -->
+
+    <link rel="website icon" type="png" href="logo.jpg" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>PORTFOLIO</title>
+</head>
+
+<body class="gradient">
+
+    <header class="header">
+        <div id="toggle-menu" class="toggle-menu" data-aos="fade-left">
+            <i class='bx bx-dots-vertical-rounded'></i>
+        </div>
+        <nav class="nav" id="nav">
+            <a href="#header" class="nav-link">ABOUT ME</a>
+            <a href="#skills" class="nav-link">SKILLS</a>
+            <a href="#projects" class="nav-link">PROJECTS</a>
+            <a href="#contact" class="nav-link">CONTACT ME</a>
+            <button class="btn" id="descargarCV" onclick="descargarCV()">
+                DOWNLOAD CV
+            </button>
+        </nav>
+
+        <div class="header-content" id="header" data-aos="fade-up" data-aos-duration="3000">
+            <div class="header-content-info">
+                <div class="text-typed" data-aos="fade-down">
+                    <span class="typed"></span>
+                </div>
+                <h1>LUIS CORONADO.</h1>
+                <p>
+                    ¡Bienvenido a mi mundo digital! Soy Luis, un apasionado <span>desarrollador web Frontend</span> con
+                    una
+                    creatividad desbordante y un compromiso inquebrantable con la excelencia técnica. Mi viaje en el
+                    vasto universo del desarrollo web ha estado marcado por la búsqueda constante de la
+                    <span>innovación</span> y la
+                    creación de experiencias cautivadoras.
+
+                    Con una sólida formación en tecnologías clave como <span>HTML, CSS y JavaScript,</span> mi objetivo
+                    es
+                    transformar ideas en realidades visuales y funcionales.
+                </p>
+                <div class="header-buttons" data-aos="fade-up" data-aos-duration="1000">
+                    <button class="btn" id="skills-button">SKILLS</button>
+                    <button class="btn" id="descargarCV-button" onclick="descargarCV()">DOWNLOAD CV</button>
+                </div>
+            </div>
+            <div class="header-content-img">
+                <img src="logo.jpg" alt="logo">
+            </div>
+        </div>
+
+    </header>
+
+    <svg class="wave_skills_in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#141414" fill-opacity="1"
+            d="M0,160L48,165.3C96,171,192,181,288,197.3C384,213,480,235,576,240C672,245,768,235,864,208C960,181,1056,139,1152,106.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
+    <main class="main">
+
+        <div class="skills" id="skills">
+
+            <h1 data-aos="zoom-in-right"><span>E</span>stadísticas.</h1>
+
+            <div class="estadisticas" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">
+                                HTML <br>80%
+                            </div>
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px"
+                        class="circles html-circle">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#00ffb3" />
+                                <stop offset="100%" stop-color="#00d315" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">
+                                CSS <br>80%
+                            </div>
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px"
+                        class="circles css-circle">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#00ffb3" />
+                                <stop offset="100%" stop-color="#00d315" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">
+                                JS <br>65%
+                            </div>
+                        </div>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px"
+                        class="circles js-circle">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#00ffb3" />
+                                <stop offset="100%" stop-color="#00d315" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">
+                                PHP <br>55%
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px"
+                        class="circles php-circle">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#00ffb3" />
+                                <stop offset="100%" stop-color="#00d315" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="cualidades" id="cualidades-section" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div class="tarjeta_cualidad tarjeta-insp">
+                    <div class="cualidad">
+                        <h2>INSPIRACIÓN</h2>
+                        <p>Soy muy <span>creativo</span> y me gusta crear proyectos que sean <span>ambiciosos</span> con
+                            altos
+                            detalles de calidad y dinamicos y agradables para la vista de todos.</p>
+                    </div>
+                    <img src="rocket-dynamic-color.png" alt="rocket-dynamic-color">
+                </div>
+
+                <div class="tarjeta_cualidad tarjeta-creat">
+                    <div class="cualidad">
+                        <h2>CREATIVIDAD</h2>
+                        <p>Aspiro a proyectos <span>revolucionarios</span> que permiten al cliente o usuario la
+                            proporcion de la informacion de la manera mas
+                            <span>dinamica</span> possible con altos rangos de detalles
+                        </p>
+                    </div>
+                    <img src="bulb-dynamic-color.png" alt="bulb-dynamic-color">
+                </div>
+
+                <div class="tarjeta_cualidad tarjeta-dinam">
+                    <div class="cualidad">
+                        <h2>DINAMIZACIÓN</h2>
+                        <p>Suelo usar muchos recursos online que <span>agilizan</span> el trabajo que hago.
+                            de esta manera puedo resolver problemas de forma mas sencilla y eficaz.</p>
+                    </div>
+                    <img src="tea-cup-dynamic-color.png" alt="tea-cup-dynamic-color">
+                </div>
+
+                <div class="tarjeta_cualidad tarjeta-seg">
+                    <div class="cualidad">
+                        <h2>SEGURIDAD</h2>
+                        <p>La seguridad ante todo. Por eso siempre utilizo los metodos de <span>seguridad</span> mas
+                            eficaces,
+                            que van resolviendo, hay que estar siempre al dia</p>
+                    </div>
+                    <img src="sheild-dynamic-color.png" alt="sheild-dynamic-color">
+                </div>
+                <div class="wave">
+                    <svg class="wave_skills_out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#141414" fill-opacity="1"
+                            d="M0,224L80,192C160,160,320,96,480,112C640,128,800,224,960,250.7C1120,277,1280,235,1360,213.3L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+                        </path>
+                    </svg>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="projects" id="projects">
+            <h2 data-aos="zoom-in-right">Work.</h2>
+            <div class="contenedor-projectos">
+                <div class="projecto p-left" data-aos="zoom-in-right">
+                    <img src="projecto01.PNG" alt="projecto01">
+                    <div class="info-tarjeta-projecto">
+                        <h2>Tienda De Instrumentos.</h2>
+                        <p>DESCRIPCIÓN: Projecto básico en el que puedes crear isntrumentos y los puedes vender, trabaja
+                            con <span>localhost</span></p>
+                    </div>
+                </div>
+                <div class="projecto p-right" data-aos="zoom-in-left">
+                    <div class="info-tarjeta-projecto">
+                        <h2>Reserva De Habitaciones.</h2>
+                        <p>DESCRIPCIÓN: Projecto en el que puedes realizar una reserva de habitaciones y nadie puede
+                            reservar el mismo dia la misma habitacion que este ocupada.</p>
+                    </div>
+                    <img src="projecto02.PNG" alt="projecto01">
+                </div>
+                <div class="projecto p-left" data-aos="zoom-in-right">
+                    <img src="projecto03.PNG" alt="projecto01">
+                    <div class="info-tarjeta-projecto">
+                        <h2>Juego Del 3 En Raya.</h2>
+                        <p>DESCRIPCIÓN: Juego del 3 en raya tienes 2 minutos para completar la partida y el recuento de
+                            puntos se queda guardado en el localhost</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <svg class="wave_footer_in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#141414" fill-opacity="1"
+            d="M0,160L48,165.3C96,171,192,181,288,197.3C384,213,480,235,576,240C672,245,768,235,864,208C960,181,1056,139,1152,106.7C1248,75,1344,53,1392,42.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
+    <footer class="footer">
+        <div class="contact" id="contact">
+            <div class="info-footer">
+                <div class="nav-footer">
+                    <a href="#header" class="nav-links">ABOUT ME</a>
+                    <a href="#skills" class="nav-link">SKILLS</a>
+                    <a href="#projects" class="nav-link">PROJECTS</a>
+                    <a href="#contact" class="nav-link">CONTACT ME</a>
+                </div>
+                <div class="social-networks">
+                    <a href="https://www.instagram.com/_.luiscoronado/" title="instagram_link">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a>
+                    <a href="https://wa.me/695261396" title="whatsapp_link">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                    <a href="mailto:lulubi888@gmail.com" title="gmail_link">
+                        <i class='bx bxl-gmail'></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/luis-coronado-323ba01b6/" title="linkedin_link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                </div>
+                <div class="formulario-contact">
+                    <form action="">
+                        <label for="contact-mail">MAIL : </label>
+                        <input type="text" id="contact-mail" placeholder="">
+
+                        <label for="contact-text">MENSAJE : </label>
+                        <textarea name="contact-text" id="contact-text" cols="25" rows="3"></textarea>
+                        <button type="submit" class="btn">ENVIAR MENSAJE</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-footer">
+                <p class="copyright">©OPYRIGHT - 2024 - Luis Coronado</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/4d647d332e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
