@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="panaderia.css" />
+
+    <!-- ANIMATIONS -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--
+        
+                    BOOTSTRAP 
+                
+                <link href="https://maxcdn.bootstrapcdn.com/font-..." rel="stylesheet"
+                    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+                
+                -->
+
+    <!-- TYPE FONTS -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- ICONS -->
+
+    <link rel="website icon" type="png" href="./logo.png" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <title>Panaderia</title>
+</head>
+
+<body>
+
+    <!-- contenido -->
+
+    <header class="header" id="inicio">
+
+        <nav class="nav">
+            <div class="nav-content">
+                <img src="./logo.png" alt="logo">
+                <button class="btn" id="iniciarSesionHeader"><i class='bx bxs-user'></i>Iniciar Sesión</button>
+            </div>
+            <ul>
+                <li>
+                    <a href="#inicio">INICIO</a>
+                    <a href="#informacion">INFORMACIÓN</a>
+                    <a href="#galeria">GALERIA</a>
+                    <a href="#contacto">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-content">
+
+            <div class="header-text">
+                <h1>Bread King</h1>
+                <p>
+                    ¡Bienvenidos a la dulce esencia de nuestro horno virtual! En la panadería <span
+                        class="resaltado">Bread King</span>,
+                    cada día amasamos pasión y tradición para brindarte los más exquisitos manjares horneados.
+                    Desde crujientes baguettes hasta tiernos croissants, cada bocado es un viaje a la <span
+                        class="resaltado">autenticidad</span>
+                    de los sabores artesanales. Con <span class="resaltado">ingredientes de calidad</span> y manos
+                    expertas, creamos momentos de deleite para tu paladar.
+                    Descubre nuestra variedad de panes, pasteles y delicias para satisfacer todos tus antojos.
+                    ¡Déjate seducir por el aroma del pan recién horneado y únete a nuestra familia de sabor!
+                </p>
+                <div class="buttons-header">
+                    <button class="btn" id="comprar-pan">Comprar Pan</button>
+                    <button class="btn" id="comprar-reposteria">Comprar Reposteria</button>
+                </div>
+            </div>
+
+            <div class="header-img">
+                <div class="blob"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="main">
+        <div class="informacion">
+            <div class="info">
+                <div class="info-text">
+                    <h2>Nuestro Trabajo</h2>
+                    <p>
+                        En la panadería Bread King, cada creación es una obra de arte comestible, elaborada con pasión y
+                        dedicación. Desde los clásicos panes artesanales hasta los postres más indulgentes, cada
+                        producto
+                        refleja nuestra búsqueda incansable de la excelencia gastronómica. Nos enorgullece trabajar con
+                        ingredientes frescos y de la más alta calidad, seleccionados cuidadosamente para garantizar un
+                        sabor
+                        inigualable en cada bocado. Además de nuestra amplia variedad de productos horneados, ofrecemos
+                        opciones para dietas especiales, incluyendo sin gluten y veganas, asegurando que todos puedan
+                        disfrutar de la magia de la panadería Bread King. ¡Ven y descubre un mundo de delicias que
+                        deleitarán
+                        tus sentidos!
+                    </p>
+                    <button class="btn" id="profesionales">Nuestros Profesionales</button>
+                </div>
+                <div class="info-text">
+                    <h2>Nuestros Servicios</h2>
+                    <p>
+                        La panadería Bread King ofrece una amplia gama de productos horneados artesanales, desde panes
+                        frescos y croissants hasta exquisitos pasteles y postres. Nuestros productos son elaborados con
+                        ingredientes de la más alta calidad, cuidadosamente seleccionados para garantizar un sabor
+                        excepcional en cada bocado. Además de nuestras delicias tradicionales, también ofrecemos
+                        opciones para dietas especiales, como productos sin gluten y veganos, asegurando que todos
+                        puedan disfrutar de nuestros productos. Con un compromiso inquebrantable con la excelencia
+                        gastronómica y el servicio al cliente, en nuestra panadería encontrarás un lugar donde cada
+                        visita es una experiencia deliciosa y satisfactoria.
+                    </p>
+                    <button class="btn" id="trabajos">Nuestros Trabajos</button>
+                </div>
+
+            </div>
+
+            <div class="info-icons">
+                <div class="card croissant-tarjet">
+                    <img src="./pan-icono.png" alt="">
+                    <h3>Mejores Panes</h3>
+                    <button class="btn" id="verPanes">Nuestros Panes</button>
+                </div>
+                <div class="card pan-tarjet">
+                    <img src="./croissant-icono.png" alt="">
+                    <h3>Mejor Reposteria</h3>
+                    <button class="btn" id="verRepo">Nuestra Reposteria</button>
+                </div>
+                <div class="card varilla-tarjet">
+                    <img src="./varilla-icono.png" alt="icono-varilla">
+                    <h3>Grandes Profesionales</h3>
+                    <button class="btn" id="verProfesionales">Nuestros Profesionales</button>
+                </div>
+                <div class="card contact-tarjet">
+                    <img src="./contacto-icono.png" alt="icono-contacto">
+                    <h3>Nuestro Contacto</h3>
+                    <button class="btn" id="contactar">Contactanos</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="galeria">
+            <h2>Nuestro Producto...</h2>
+            <h3>Panes.</h3>
+            <div class="galeria-pan">
+                <div class="cardProduct">
+                    <img src="./baguette.png" alt="baguette">
+                    <h3>Pan Baguette</h3>
+                    <p>0.50€</p>
+                    <button class="btn">Comprar</button>
+                </div>
+                <div class="cardProduct">
+                    <img src="./molde.png" alt="molde">
+                    <h3>Pan Molde</h3>
+                    <p>1€</p>
+                    <button class="btn">Comprar</button>
+                </div>
+                <div class="cardProduct">
+                    <img src="./rustico.png" alt="rustico">
+                    <h3>Pan Rustico</h3>
+                    <p>1.50€</p>
+                    <button class="btn">Comprar</button>
+                </div>
+                <div class="cardProduct">
+                    <img src="./pages.png" alt="pages">
+                    <h3>Pan Pages</h3>
+                    <p>1.75€</p>
+                    <button class="btn">Comprar</button>
+                </div>
+            </div>
+
+        <h3>Reposteria.</h3>
+
+        <div class="galeria-repo">
+            <div class="cardProduct">
+                <img src="./croissant.png" alt="croissant">
+                <h3>Croissant</h3>
+                <p>1.50€</p>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="cardProduct">
+                <img src="./ensiamada.png" alt="ensiamada">
+                <h3>Ensiamada</h3>
+                <p>2€</p>
+                <button class="btn">Comprar</button>
+            </div>
+            <div class="cardProduct">
+                <img src="./napolitana.png" alt="napolitana">
+                <h3>Napolitana</h3>
+                <p>3€</p>
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    </main>
+
+    <div class="contact" id="contacto">
+        <div class="contactoPanaderia">
+            <h2>Formulario de Contacto.</h2>
+            <form action="submit" class="formulario">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre">
+
+                <label for="email">Email: </label>
+                <input type="email" id="email">
+
+                <label for="mensaje">Mensaje: </label>
+                <input type="<textarea rows="30" cols="30" id="mensaje"></textarea>
+                
+                <button class="btn" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Powered By Luis Coronado</p>
+    </footer>
+
+    <!-- script -->
+
+    <script src="panaderia.js"></script>
+
+    <!-- librerias -->
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://kit.fontawesome.com/4d647d332e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
